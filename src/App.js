@@ -7,8 +7,8 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Form />} />
-          <Route exact path="/employee-list" element={<Table />} />
+          <Route exact path="/JeremiePiard_14_02112022/" element={<Form />} />
+          <Route exact path="/JeremiePiard_14_02112022/employee-list" element={<Table />} />
         </Routes>
       </Router>
     </div>
