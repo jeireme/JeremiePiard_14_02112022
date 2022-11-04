@@ -70,7 +70,7 @@ function Table() {
         />
       </div>
 
-      <Link className="home-link" to="/">
+      <Link className="home-link" to="/JeremiePiard_14_02112022/">
         Home
       </Link>
     </div>

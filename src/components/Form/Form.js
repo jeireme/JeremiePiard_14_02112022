@@ -50,7 +50,7 @@ function Form() {
     <div className="container">
       <div className="formContainer flexContainer">
         <h1>HRnet</h1>
-        <Link className="link" to="/employee-list">
+        <Link className="link" to="/JeremiePiard_14_02112022/employee-list">
           View Current Employees
         </Link>
         <h2 className="title">Create Employee</h2>
