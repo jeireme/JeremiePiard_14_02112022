@@ -1,0 +1,222 @@
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background: linear-gradient(135deg, #71e69a, #babf4f);
+}
+
+.link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+}
+
+.link:hover {
+    background-color: #439446;
+}
+
+.formContainer {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+h1 {
+    color: #275634;
+    margin: 20px 0;
+}
+
+.title {
+    color: rgb(42, 42, 42);
+    font-size: 19px;
+    font-weight: 400;
+    margin: 20px 0 25px 0;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    margin-bottom: -3px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 164px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #67f3bb, #f3b600);
+}
+
+label {
+    margin: 3px 0;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input input,
+.input select {
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.datePicker {
+    width: 120px;
+}
+
+.datePicker input {
+    padding-left: 7px;
+}
+
+input {
+    width: 96%;
+    height: 25px;
+    padding-left: 7px;
+
+}
+
+select {
+    width: 99%;
+    height: 29px;
+    padding-left: 5px;
+}
+
+.input input:focus,
+.input input:valid,
+.input select:focus,
+.input select:valid {
+    border-color: #03a72f;
+}
+
+.margin-bottom {
+    margin-bottom: 4px;
+}
+
+.margin {
+    margin: 4px 0px;
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+    visibility: hidden;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.overlay-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background: whitesmoke;
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0);
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: rgb(46, 105, 18);
+    min-width: 30px;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.modal-active {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content img {
+    width: 120px;
+    margin-top: -55px;
+}
+
+.modal-content p {
+    margin: 25px 0 15px 0;
+}
+
+.modal-content button {
+    width: 40%;
+    margin: 20px 0 10px 0;
+    padding: 10px 0;
+    background: #22c135;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content button:hover {
+    background: #188a25;
+
+}
+
+form .button {
+    color: #fff;
+    height: 33px;
+    margin: 20px 0 15px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #55d883, #d7de52);
+}
+
+form .button:hover {
+    background: linear-gradient(135deg, #4c9767, #babf50);
+}
