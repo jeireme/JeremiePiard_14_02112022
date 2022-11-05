@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/JeremiePiard_14_02112022/static/css/main.fc676d8c.css",
-    "main.js": "/JeremiePiard_14_02112022/static/js/main.dc46dda6.js",
+    "main.js": "/JeremiePiard_14_02112022/static/js/main.0a0bc33d.js",
     "static/media/tick.png": "/JeremiePiard_14_02112022/static/media/tick.e52380e8f2b100f40440.png",
     "index.html": "/JeremiePiard_14_02112022/index.html",
     "main.fc676d8c.css.map": "/JeremiePiard_14_02112022/static/css/main.fc676d8c.css.map",
-    "main.dc46dda6.js.map": "/JeremiePiard_14_02112022/static/js/main.dc46dda6.js.map"
+    "main.0a0bc33d.js.map": "/JeremiePiard_14_02112022/static/js/main.0a0bc33d.js.map"
   },
   "entrypoints": [
     "static/css/main.fc676d8c.css",
-    "static/js/main.dc46dda6.js"
+    "static/js/main.0a0bc33d.js"
   ]
 }
