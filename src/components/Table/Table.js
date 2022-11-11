@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import "./Table.css";
 
 function Table() {
+  // In order to make testing easier, 30 fake employees had been added to the database (stored in mockedData.js)
   const data = useSelector((state) => state.users);
 
+  // useMemo memoizes a value that doesn't need to be recalculated, it improves performances
   const columns = useMemo(
     () => [
       {
@@ -57,19 +59,21 @@ function Table() {
   );
 
   return (
-    <div className="container">
+    <div className="container" role="main">
       <h1 className="employee-header">Current Employees</h1>
 
       <div>
         <MaterialReactTable
           columns={columns}
           data={data}
+          // muiTablePaperProps is used for styling shadow
           muiTablePaperProps={{
             elevation: 3,
           }}
         />
       </div>
 
+      {/* Link to go back to the form page */}
       <Link className="home-link" to="/JeremiePiard_14_02112022/">
         Home
       </Link>

@@ -33,6 +33,8 @@ function Form() {
     setUserName(newUser.firstName + " " + newUser.lastName);
 
     dispatch(addUser(newUser));
+
+    // Modal step 1 : When a new user is added to the database, the modal opens
     setModal(true);
 
     e.target[0].value = "";
@@ -47,9 +49,10 @@ function Form() {
   };
 
   return (
-    <div className="container">
+    <div className="container" role="main">
       <div className="formContainer flexContainer">
         <h1>HRnet</h1>
+        {/* Link to access the employees database */}
         <Link className="link" to="/JeremiePiard_14_02112022/employee-list">
           View Current Employees
         </Link>
@@ -72,11 +75,13 @@ function Form() {
           <div className="input margin-bottom">
             <label htmlFor="date-of-birth">Date of Birth</label>
             <div>
+              {/* Plugin DatePicker */}
               <DatePicker
                 selected={birthdayDate}
                 onChange={(date) => setBirthdaytDate(date)}
                 wrapperClassName="datePicker"
                 required
+                id="date-of-birth"
               />
             </div>
           </div>
@@ -85,11 +90,13 @@ function Form() {
           <div className="input margin-bottom">
             <label htmlFor="start-date">Start Date</label>
             <div>
+              {/* Plugin DatePicker */}
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
                 wrapperClassName="datePicker"
                 required
+                id="start-date"
               />
             </div>
           </div>
@@ -115,6 +122,7 @@ function Form() {
                 <label htmlFor="state">State</label>
                 <select name="state" id="state" required>
                   <option value="">-- Select a State --</option>
+                  {/* States options are generated using a map method on an external file */}
                   {states.map((state) => (
                     <option value={state.abbreviation} key={state.abbreviation}>
                       {state.name}
@@ -150,16 +158,20 @@ function Form() {
           </button>
         </form>
 
+        {/* Modal step 2 : an overlay is displayed when modal opens */}
         <div
           className={modal ? "overlay overlay-active" : "overlay"}
+          // If the user clicks on an empty zone, the modal disappear with the overlay
           onClick={() => setModal(false)}
         ></div>
+        {/* Modal step 3 : modal is displayed */}
         <div
           className={modal ? "modal-content modal-active" : "modal-content "}
         >
           <img src={tick} alt="valid tick" />
           <h2>Employee Created!</h2>
           <p>{userName} has been added to the database.</p>
+          {/* Modal step 4 : after clicking of the "ok" button, the modal disappears */}
           <button onClick={() => setModal(false)}>OK</button>
         </div>
       </div>
