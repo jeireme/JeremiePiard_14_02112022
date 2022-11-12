@@ -5,10 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename="/JeremiePiard_14_02112022">
         <Routes>
           <Route exact path="/JeremiePiard_14_02112022/" element={<Form />} />
-          <Route exact path="/JeremiePiard_14_02112022/employee-list" element={<Table />} />
+          <Route
+            exact
+            path="/JeremiePiard_14_02112022/employee-list"
+            element={<Table />}
+          />
         </Routes>
       </Router>
     </div>
