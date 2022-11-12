@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Router basename="/JeremiePiard_14_02112022">
+      <Router>
         <Routes>
           <Route exact path="/JeremiePiard_14_02112022/" element={<Form />} />
           <Route
