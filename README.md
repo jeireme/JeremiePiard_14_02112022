@@ -10,4 +10,4 @@
 ## Liste des employés
 ![page de liste des employés](https://i.ibb.co/N2sXFXL/employee-list-page.jpg)
 ## Résulats du test de performances Lighthouse
-![résultats test de performances lighthouse](https://i.ibb.co/Nm73rL4/feux-artifices.gif)
+![résultats test de performances lighthouse](https://puu.sh/JwB03/0741dd5854.gif)
